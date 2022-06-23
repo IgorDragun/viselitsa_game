@@ -1,10 +1,12 @@
-require_relative "game.rb"
-require_relative "result_printer.rb"
-require_relative "word_reader.rb"
+require_relative "lib/game.rb"
+require_relative "lib/result_printer.rb"
+require_relative "lib/word_reader.rb"
 
 word_reader = WordReader.new
 
-slovo = word_reader.read_from_file("words.txt")
+file_path = File.dirname(__FILE__) + "/data/words.txt"
+
+slovo = word_reader.read_from_file(file_path)
 
 game = Game.new(slovo)
 printer = ResultPrinter.new

@@ -1,6 +1,5 @@
 # Создадим класс для вывода информации об игре на экран
 
-
 class ResultPrinter
 
 	# Опишем конструктов
@@ -10,7 +9,7 @@ class ResultPrinter
 		counter = 0
 
 		while counter <= 7 do
-			file_name = current_path + "/image/#{counter}.txt"
+			file_name = current_path + "/../image/#{counter}.txt"
 
 			# Обработка отсутствия файла через исключение
 			begin Errno::ENOENT

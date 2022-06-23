@@ -1,8 +1,6 @@
 class WordReader
 
-	def read_from_file(file_name)
-		current_path = File.dirname(__FILE__)
-		file_path = current_path + "/data/" + file_name
+	def read_from_file(file_path)
 
 		# Обработка отсутствия файла через исключение
 		begin
